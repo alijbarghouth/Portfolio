@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg sticky-top navbar-dark">
+    <nav className="navbar navbar-expand-lg sticky-top navbar-dark text-center">
       <div className="container">
         Portofolio
         <button
@@ -30,7 +30,7 @@ const Navbar = () => {
               <Link
                 className="nav-link active p-2 p-lg-3"
                 aria-current="page"
-                href="#">
+                to="service">
                 Services
               </Link>
             </li>
@@ -46,7 +46,7 @@ const Navbar = () => {
               <Link
                 className="nav-link active p-2 p-lg-3"
                 aria-current="page"
-                href="#">
+                to="about">
                 About
               </Link>
             </li>
