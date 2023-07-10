@@ -24,7 +24,7 @@ const About = () => {
           to delivering high-quality web solutions that meet clients' needs
           while adhering to industry standards.
         </p>
-        <a href="#" className="button">
+        <a href="https://www.linkedin.com/in/alijbarghouth/" className="button">
           Read More
         </a>
       </div>
