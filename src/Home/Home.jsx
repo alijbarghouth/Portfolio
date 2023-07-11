@@ -11,16 +11,16 @@ function Home() {
         </h3>
         <p>Asp.Net | ReactJs</p>
         <div className="social-media">
-          <a href="#">
+          <a href="https://www.facebook.com/alijbarghouth">
             <i class="fa-brands fa-facebook"></i>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/alijbarghouth/">
             <i class="fa-brands fa-linkedin"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/alijbarghouth">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="#">
+          <a href="https://github.com/alijbarghouth">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </div>

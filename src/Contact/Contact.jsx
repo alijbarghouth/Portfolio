@@ -3,13 +3,13 @@ import React from "react";
 const Contact = () => {
   return (
     <section className="mb-4 contact">
-      <h2 className="h1-responsive font-weight-bold text-center my-4">
-        Contact Me
+      <h2 className="heading h1-responsive font-weight-bold text-center my-4">
+        Contact <span>Me</span>
       </h2>
       <p className="text-center w-responsive mx-auto mb-5">
-        do you have questions? Please do not hesitate to contact me directly.
+        do you have questions? Please do not hesitate to contact me directly
       </p>
-      <div className="row">
+      <div className="row contact-content">
         <div className="col-md-9 mb-md-0 mb-5">
           <form
             id="contact-form"

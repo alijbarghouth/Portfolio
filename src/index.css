@@ -351,13 +351,13 @@ span {
   overflow: hidden;
   height: 300px;
 }
-.portofolio-layer h4{
+.portofolio-layer h4 {
   margin: 2rem 0;
   font-size: 1.6rem;
   font-weight: bold;
   color: var(--green-color);
 }
-.portofolio-layer p{
+.portofolio-layer p {
   line-height: 2rem;
 }
 @media (max-width: 768px) {
@@ -373,8 +373,32 @@ span {
 /* End Protofolio */
 
 /* Start Contact */
-.contact{
-  width: 100%;
-  margin: 1rem;
+.contact {
+  margin: 5rem;
+  margin-top: 2rem;
+  border-radius: 4rem;
+  border: 2rem solid --red-color;
+  color: var(--white-color);
+  transition: 0.5s ease;
+}
+.contact h2 {
+  margin-top: 40rem;
+}
+.contact:hover {
+  box-shadow: 0 0 1rem var(--green-color);
+  transform: scale(1.02);
+}
+.contact .contact-content {
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .contact {
+    margin: 1rem;
+  }
 }
 /* End Contact */
