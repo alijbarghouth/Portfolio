@@ -54,7 +54,7 @@ const Navbar = () => {
               <Link
                 className="nav-link active p-2 p-lg-3"
                 aria-current="page"
-                href="#">
+                to="contact">
                 Contact
               </Link>
             </li>

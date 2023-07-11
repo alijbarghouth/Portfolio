@@ -15,49 +15,55 @@ const Portfolio = () => {
           <div className="portofolio-layer">
             <h4>Library Management System</h4>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Architecto veniam delectus ut, quam eligendi, dolorum
-              reprehenderit molestias optio rem corrupti quisquam? Iusto, ipsum
-              ab neque delectus eius tempore accusantium perferendis!
+              Libro is a comprehensive Book Management System designed to
+              facilitate the easy management and discovery of books.
+              <p className="text-info">
+                Technology used : Asp.Net- C# for Back-end, SSMS for DB
+              </p>
             </p>
-            <a href="#">
+            <a href="https://github.com/alijbarghouth/LibraryManagementSystem">
+              <i class="fa-solid fa-link fa-beat fa-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <div className="portofolio-box">
+          <img
+            src={require("./Images/school.png")}
+            alt="Library Management System photo"
+          />
+          <div className="portofolio-layer">
+            <h4>Graduation Project</h4>
+            <p>
+              My graduation project, The project is affiliated to the Ministry
+              of Education in Palestine. (Thesis and Presentation){" "}
+              <p className="text-info">
+                Technology used : Asp.Net- C# for Back-end, Reactjs for
+                front-End, SSMS for DB Note : repo is private you can view Video
+              </p>
+            </p>
+            <a href="https://www.youtube.com/watch?v=bxirhTU7uX8&t=2s">
               <i class="fa-solid fa-link fa-beat fa-lg"></i>
             </a>
           </div>
         </div>
         <div className="portofolio-box">
           <img
-            src={require("./Images/Library_Management_System.jpg")}
+            src={require("./Images/E Commerce System.jpg")}
             alt="Library Management System photo"
           />
           <div className="portofolio-layer">
-            <h4>Library Management System</h4>
+            <h4>E Commerce System </h4>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Architecto veniam delectus ut, quam eligendi, dolorum
-              reprehenderit molestias optio rem corrupti quisquam? Iusto, ipsum
-              ab neque delectus eius tempore accusantium perferendis!
+              My Project using Asp.net api Frameworks contains CRUDS operations
+              and Authentication and Authorization using Token(json web Token)
+              and using fluent validation and filter and pagination.
+              <p className="text-info">
+                Technology used : Asp.Net- C# for Back-end, SSMS for DB
+              </p>
             </p>
-            <a href="#">
-              <i class="fa-solid fa-link fa-beat fa-lg"></i>
-            </a>
-          </div>
-        </div>
-        <div className="portofolio-box">
-          <img
-            src={require("./Images/Library_Management_System.jpg")}
-            alt="Library Management System photo"
-          />
-          <div className="portofolio-layer">
-            <h4>Library Management System</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Architecto veniam delectus ut, quam eligendi, dolorum
-              reprehenderit molestias optio rem corrupti quisquam? Iusto, ipsum
-              ab neque delectus eius tempore accusantium perferendis!
-            </p>
-            <a href="#">
-              <i class="fa-solid fa-link fa-beat fa-lg"></i>
+            <a href="https://github.com/alijbarghouth/E-Commerce-System">
+              <i className="fa-solid fa-link fa-beat fa-lg"></i>
             </a>
           </div>
         </div>

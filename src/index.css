@@ -251,23 +251,21 @@ span {
 
 .service-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 4rem;
+  flex-direction: column;
+  text-align: center;
 }
-.service-box {
-  flex-basis: 50%;
+.service-container .service-box {
   padding: 10px;
+  margin-bottom: 4rem;
+  width: 50%;
+  margin-left: 25%;
 }
-.service h1{
+.service h1 {
   font-size: 4rem;
   font-weight: bold;
   margin-top: 2rem;
 }
 .service-container .service-box {
-  flex: 1 1 30rem;
   background: var(--dark-color);
   border: 0.2rem solid var(--dark-color);
   padding: 3rem 2rem 4rem;
@@ -275,36 +273,108 @@ span {
   text-align: center;
   transition: 0.5s ease;
 }
-.service-container .service-box:hover{
+.service-container .service-box:hover {
   border: 0.2rem solid var(--green-color);
-transform: scale(1.02);
+  transform: scale(1.02);
 }
-.service-box i{
+.service-box i {
   font-size: 4rem;
   color: var(--green-color);
   margin-bottom: 1rem;
+  border: none;
 }
-.service-box h3{
+.service-box h3 {
   font-size: 2rem;
 }
-.service-box p{
+.service-box p {
   font-size: 1rem;
 }
 @media (max-width: 768px) {
   .service-container {
     flex-direction: column;
   }
+  .service-container .service-box {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .service h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 992px) {
   .service-container {
     flex-direction: column;
   }
+  .service h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .service-container .service-box {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 /* End Service */
 
 /* Start Portofolio */
-.portofolio-layer a{
+.portofolio-layer a {
   display: block;
   text-decoration: none;
 }
+.protfolio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.protfolio-container .portofolio-box {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  background: var(--dark-color);
+  border: 0.2rem solid var(--dark-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  transition: 0.5s ease;
+  margin: 2rem;
+}
+.protfolio-container .portofolio-box:hover {
+  border: 0.2rem solid var(--green-color);
+  transform: scale(1.02);
+}
+
+.portofolio-box img {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+.portofolio-layer h4{
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--green-color);
+}
+.portofolio-layer p{
+  line-height: 2rem;
+}
+@media (max-width: 768px) {
+  .protfolio-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .protfolio-container {
+    flex-direction: column;
+  }
+}
 /* End Protofolio */
+
+/* Start Contact */
+.contact{
+  width: 100%;
+  margin: 1rem;
+}
+/* End Contact */
