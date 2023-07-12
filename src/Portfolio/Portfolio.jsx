@@ -1,13 +1,29 @@
 import React from "react";
-
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 const Portfolio = () => {
+  const sr = ScrollReveal({
+    duration: 2000,
+    delay: 200,
+    distance: "80px",
+    reset: true,
+  });
+  useEffect(() => {
+    sr.reveal(".heading");
+    const head = document.getElementById("heading");
+    sr.reveal(head, { origin: "top" });
+
+    sr.reveal("protfolio-container");
+    const content = document.getElementById("protfolio-container");
+    sr.reveal(content, { origin: "bottom" });
+  }, []);
   return (
     <section className="protfolio">
-      <h1 className="heading">
-        Latest <span>Project</span>
+      <h1 className="heading mt-5" id="heading">
+        Latest <span className="fs-1 fw-bold">Project</span>
       </h1>
-      <div className="protfolio-container">
-        <div className="portofolio-box">
+      <div className="protfolio-container" id="protfolio-container">
+        <div className="portofolio-box" id="portofolio-box">
           <img
             src={require("./Images/Library_Management_System.jpg")}
             alt="Library Management System photo"
@@ -27,7 +43,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="portofolio-box">
+        <div className="portofolio-box" id="portofolio-box">
           <img
             src={require("./Images/school.png")}
             alt="Library Management System photo"
@@ -47,7 +63,7 @@ const Portfolio = () => {
             </a>
           </div>
         </div>
-        <div className="portofolio-box">
+        <div className="portofolio-box" id="portofolio-box">
           <img
             src={require("./Images/E Commerce System.jpg")}
             alt="Library Management System photo"

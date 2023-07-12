@@ -1,12 +1,28 @@
 import React from "react";
-
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 const Service = () => {
+  const sr = ScrollReveal({
+    duration: 2000,
+    delay: 200,
+    distance: "80px",
+    reset: true,
+  });
+  useEffect(() => {
+    sr.reveal(".heading");
+    const head = document.getElementById("heading");
+    sr.reveal(head, { origin: "top" });
+    
+    sr.reveal(".service-container");
+    const content = document.getElementById("service-container");
+    sr.reveal(content, { origin: "bottom" });
+  }, []);
   return (
     <section className="service">
-      <h1 className="heading">
-        Our <span>Service</span>
-      </h1>
-      <div className="service-container">
+      <h2 className="heading" id="heading">
+        Our <span className="fs-1 fw-bold">Service</span>
+      </h2>
+      <div className="service-container" id="service-container">
         <div className="service-box">
           <i class="fa-solid fa-code"></i>
           <h3>Backend Developer</h3>

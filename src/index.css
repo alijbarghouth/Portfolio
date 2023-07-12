@@ -85,12 +85,30 @@ body {
 }
 .heading {
   text-align: center;
+  font-size: 2.8rem;
   margin-bottom: 3rem;
 }
 .img {
   width: 35vw;
   height: 400px;
+  background-color: var(--green-color);
+  border-radius: 50%;
+  color: var(--green-color);
+  animation: floatImage 4s ease-in-out infinite;
 }
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .social-media a {
   text-decoration: none;
   display: inline-flex;
@@ -108,6 +126,7 @@ body {
 }
 span {
   color: var(--green-color);
+  font-size: 1.5rem;
 }
 .social-media a:hover {
   background: var(--green-color);
@@ -125,6 +144,12 @@ span {
   color: var(--green-color);
 }
 @media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 0.9rem;
+  }
   .home {
     flex-direction: column-reverse;
     margin-top: 0;
@@ -154,6 +179,12 @@ span {
   }
 }
 @media (max-width: 992px) {
+  .heading {
+    font-size: 2rem;
+  }
+  span {
+    font-size: 0.9rem;
+  }
   .home {
     flex-direction: column-reverse;
     margin-top: 0;
@@ -187,6 +218,7 @@ span {
 
 /* Start About  */
 .about {
+  height: calc(100vh - 120px);
   margin-top: 3rem;
   display: flex;
   align-items: center;
@@ -211,6 +243,7 @@ span {
 }
 @media (max-width: 768px) {
   .about {
+    height: 100%;
     flex-direction: column;
     margin-top: 0;
   }
@@ -229,8 +262,10 @@ span {
 }
 @media (max-width: 992px) {
   .about {
+    text-align: ce;
+    height: 100%;
     flex-direction: column;
-    margin-top: 0;
+    margin: 3rem 0;
   }
   .about p {
     text-align: center;
@@ -373,11 +408,15 @@ span {
 /* End Protofolio */
 
 /* Start Contact */
+.contact_container{
+  height: calc(100vh - 500px);
+  margin: 10% auto;
+}
 .contact {
   margin: 5rem;
   margin-top: 2rem;
   border-radius: 4rem;
-  border: 2rem solid --red-color;
+  border: 0.4rem solid var(--green-color);
   color: var(--white-color);
   transition: 0.5s ease;
 }
@@ -390,6 +429,9 @@ span {
 }
 .contact .contact-content {
   padding: 2rem;
+}
+.icon i {
+  color: var(--green-color);
 }
 @media (max-width: 768px) {
   .contact {
