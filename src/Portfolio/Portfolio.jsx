@@ -52,7 +52,7 @@ const Portfolio = () => {
             <h4>Graduation Project</h4>
             <p>
               My graduation project, The project is affiliated to the Ministry
-              of Education in Palestine. (Thesis and Presentation){" "}
+              of Education in Palestine.
               <p className="text-info">
                 Technology used : Asp.Net- C# for Back-end, Reactjs for
                 front-End, SSMS for DB Note : repo is private you can view Video

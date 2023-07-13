@@ -28,7 +28,11 @@ const Contact = () => {
 
         <div className="row contact-content" id="contact-content">
           <div className="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" method="POST">
+            <form
+              action="https://formsubmit.co/alijbarghouth@gmail.com"
+              id="contact-form"
+              name="contact-form"
+              method="POST">
               <div className="row">
                 <div className="col-md-6">
                   <div className="md-form mb-4">
@@ -44,13 +48,24 @@ const Contact = () => {
                 <div className="col-md-6">
                   <div className="md-form mb-4">
                     <input
-                      type="text"
+                      type="email"
                       id="email"
                       name="email"
                       className="form-control"
                       placeholder="Email"
                     />
                   </div>
+                </div>
+              </div>
+              <div className="col-md-12">
+                <div className="md-form mb-4">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    className="form-control"
+                    placeholder="subject"
+                  />
                 </div>
               </div>
               <div className="row">
