@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 const Contact = () => {
   const sr = ScrollReveal({
     duration: 2000,
@@ -84,9 +85,11 @@ const Contact = () => {
                 </div>
               </div>
               <div className="text-center text-md-left">
-                <button type="submit" className="button">
-                  Send
-                </button>
+                <Link to="/submit">
+                  <button type="submit" className="button">
+                    Send
+                  </button>
+                </Link>
               </div>
               <div className="status" />
             </form>

@@ -396,7 +396,7 @@ span {
 .portofolio-layer p {
   line-height: 2rem;
 }
-@media (max-width:1300px){
+@media (max-width: 1300px) {
   .protfolio-container {
     flex-direction: column;
     width: 50%;
@@ -452,3 +452,12 @@ span {
   }
 }
 /* End Contact */
+
+/* Start submit */
+.submitForm {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* End Submit */
