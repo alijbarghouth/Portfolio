@@ -36,6 +36,10 @@ body {
   color: white;
   transition: 0.5s;
 }
+.hide-bg {
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+}
 .navbar .navbar-nav .nav-link:active,
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link:hover {
@@ -423,8 +427,6 @@ span {
 .contact {
   margin: 5rem;
   margin-top: 2rem;
-  border-radius: 4rem;
-  border: 0.4rem solid var(--green-color);
   color: var(--white-color);
   transition: 0.5s ease;
 }

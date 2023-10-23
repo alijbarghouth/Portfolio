@@ -40,32 +40,36 @@ const About = () => {
     sr.reveal(content, { origin: "bottom" });
   }, []);
   return (
-    <section className="about">
-      <div className="about_image" id="about_image">
-        <img
-          src={require("./Images/alibarghouth.png")}
-          className="img"
-        />
-      </div>
-      <div className="about_content" id="about_content">
-        <h2 className="heading" id="heading">
-          About <span className="fs-1 fw-bold">Me</span>
-        </h2>
-        <span ref={typedRef}></span>
-        <p>
-          I am a skilled web developer with expertise in HTML, CSS, JavaScript,
-          Bootstrap, React, ASP.NET, and MySQL. I specialize in creating
-          visually appealing, responsive, and interactive web experiences. With
-          a strong understanding of design patterns and object-oriented
-          programming, I write efficient and maintainable code. I am committed
-          to delivering high-quality web solutions that meet clients' needs
-          while adhering to industry standards.
-        </p>
-        <a href="https://www.linkedin.com/in/alijbarghouth/" className="button">
-          Read More
-        </a>
-      </div>
-    </section>
+    <div>
+      <hr className="heading mt-5 border border-warning border-top-0 border-end-0 border-start-0 border-5 rounded-circle" />
+
+      <section className="about" id="about">
+        <div className="about_image" id="about_image">
+          <img src={require("./Images/alibarghouth.png")} className="img" />
+        </div>
+        <div className="about_content" id="about_content">
+          <h2 className="heading" id="heading">
+            About <span className="fs-1 fw-bold">Me</span>
+          </h2>
+          <span ref={typedRef}></span>
+          <p>
+            I am a skilled web developer with expertise in HTML, CSS,
+            JavaScript, Bootstrap, React, ASP.NET, and MySQL. I specialize in
+            creating visually appealing, responsive, and interactive web
+            experiences. With a strong understanding of design patterns and
+            object-oriented programming, I write efficient and maintainable
+            code. I am committed to delivering high-quality web solutions that
+            meet clients' needs while adhering to industry standards.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/alijbarghouth/"
+            className="button"
+          >
+            Read More
+          </a>
+        </div>
+      </section>
+    </div>
   );
 };
 

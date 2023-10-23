@@ -19,21 +19,25 @@ const Contact = () => {
     sr.reveal(content, { origin: "bottom" });
   }, []);
   return (
-    <div className="contact_container">
-      <section className="mb-4 contact">
-        <h2
-          id="heading"
-          className="heading h1-responsive font-weight-bold text-center my-4">
-          Contact <span className="fs-2 fw-bold">Me</span>
-        </h2>
-
+    <div className="contact_container" id="contact">
+      <hr className="heading mt-5 border border-warning border-top-0 border-end-0 border-start-0 border-5 rounded-circle" />
+      <h2
+        className="heading mt-5 border border-warning border-top-0 border-end-0 border-start-0 border-5 rounded-circle"
+        id="heading"
+      >
+        <div className="mb-5">
+          Contact <span className="fs-1 fw-bold">Me</span>
+        </div>
+      </h2>
+      <section className="mb-4 contact ">
         <div className="row contact-content" id="contact-content">
           <div className="col-md-9 mb-md-0 mb-5">
             <form
               action="https://formsubmit.co/alijbarghouth@gmail.com"
               id="contact-form"
               name="contact-form"
-              method="POST">
+              method="POST"
+            >
               <div className="row">
                 <div className="col-md-6">
                   <div className="md-form mb-4">
@@ -112,6 +116,47 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <footer
+        className="text-white text-center py-4 mt-5"
+        style={{ backgroundColor: "#131726" }}
+      >
+        <div className="">
+          <div className="row">
+            <div className="col-lg-6 mx-auto">
+              <p>Follow me on social media</p>
+              <ul className="list-inline">
+                <li className="list-inline-item">
+                  <a
+                    href="https://www.facebook.com/alijbarghouth/"
+                    className="text-white"
+                  >
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a
+                    href="https://twitter.com/alijbarghouth"
+                    className="text-white"
+                  >
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a
+                    href="https://www.instagram.com/alijbarghouth/"
+                    className="text-white"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="mt-3">
+          <p>&copy; {new Date().getFullYear()} Ali J Barghouth</p>
+        </div>
+      </footer>
     </div>
   );
 };

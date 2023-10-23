@@ -2,10 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <nav className="navbar navbar-expand-lg sticky-top navbar-dark text-center">
       <div className="container">
-        Portofolio
+        <img
+          className="hide-bg"
+          src={require("./images/download.png")}
+          width="50px"
+          height="50px"
+        />
         <button
           className="navbar-toggler"
           type="button"
@@ -13,7 +24,8 @@ const Navbar = () => {
           data-bs-target="#main"
           aria-controls="main"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <i className="fa-solid fa-bars" />
         </button>
         <div className="collapse navbar-collapse" id="main">
@@ -22,7 +34,9 @@ const Navbar = () => {
               <Link
                 className="nav-link active p-2 p-lg-3 "
                 aria-current="page"
-                to="/">
+                to="/"
+                onClick={() => scrollToSection("home")}
+              >
                 Home
               </Link>
             </li>
@@ -30,23 +44,9 @@ const Navbar = () => {
               <Link
                 className="nav-link active p-2 p-lg-3"
                 aria-current="page"
-                to="service">
-                Services
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link active p-2 p-lg-3"
-                aria-current="page"
-                to="portfolio">
-                Portfolio
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link active p-2 p-lg-3"
-                aria-current="page"
-                to="about">
+                to="/"
+                onClick={() => scrollToSection("about")}
+              >
                 About
               </Link>
             </li>
@@ -54,7 +54,30 @@ const Navbar = () => {
               <Link
                 className="nav-link active p-2 p-lg-3"
                 aria-current="page"
-                to="contact">
+                to="/"
+                onClick={() => scrollToSection("service")}
+              >
+                Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link active p-2 p-lg-3"
+                aria-current="page"
+                to="/"
+                onClick={() => scrollToSection("portfolio")}
+              >
+                Portfolio
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                className="nav-link active p-2 p-lg-3"
+                aria-current="page"
+                to="/"
+                onClick={() => scrollToSection("contact")}
+              >
                 Contact
               </Link>
             </li>

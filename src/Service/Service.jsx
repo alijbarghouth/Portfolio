@@ -12,15 +12,21 @@ const Service = () => {
     sr.reveal(".heading");
     const head = document.getElementById("heading");
     sr.reveal(head, { origin: "top" });
-    
+
     sr.reveal(".service-container");
     const content = document.getElementById("service-container");
     sr.reveal(content, { origin: "bottom" });
   }, []);
   return (
-    <section className="service">
-      <h2 className="heading" id="heading">
-        Our <span className="fs-1 fw-bold">Service</span>
+    <section className="service" id="service">
+      <hr className="heading mt-5 border border-warning border-top-0 border-end-0 border-start-0 border-5 rounded-circle" />
+      <h2
+        className="heading mt-5 border border-warning border-top-0 border-end-0 border-start-0 border-5 rounded-circle"
+        id="heading"
+      >
+        <div className="mb-5">
+          Our <span className="fs-1 fw-bold">Service</span>
+        </div>
       </h2>
       <div className="service-container" id="service-container">
         <div className="service-box">
@@ -37,7 +43,8 @@ const Service = () => {
           </p>
           <a
             href="https://www.linkedin.com/in/alijbarghouth/"
-            className="button">
+            className="button"
+          >
             Read More
           </a>
         </div>
@@ -54,7 +61,8 @@ const Service = () => {
           </p>
           <a
             href="https://www.linkedin.com/in/alijbarghouth/"
-            className="button">
+            className="button"
+          >
             Read More
           </a>
         </div>

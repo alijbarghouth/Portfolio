@@ -18,9 +18,15 @@ const Portfolio = () => {
     sr.reveal(content, { origin: "bottom" });
   }, []);
   return (
-    <section className="protfolio">
-      <h1 className="heading mt-5" id="heading">
-        Latest <span className="fs-1 fw-bold">Project</span>
+    <section className="protfolio" id="portfolio">
+            <hr className="heading mt-5 border border-warning border-top-0 border-end-0 border-start-0 border-5 rounded-circle" />
+
+      <h1
+        className="heading mt-5 border border-warning border-top-0 border-end-0 border-start-0 border-5 rounded-circle"
+        id="heading">
+        <div className="mb-5">
+          Latest <span className="fs-1 fw-bold">Project</span>
+        </div>
       </h1>
       <div className="protfolio-container" id="protfolio-container">
         <div className="portofolio-box" id="portofolio-box">
@@ -83,6 +89,7 @@ const Portfolio = () => {
             </a>
           </div>
         </div>
+        
       </div>
     </section>
   );
